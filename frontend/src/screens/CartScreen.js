@@ -30,6 +30,7 @@ export default function CartScreen(props) {
     <div className="row top">
       <div className="col-2">
         <h1>Shopping Cart</h1>
+        <Link to="/">Continue shopping</Link>
         {cartItems.length === 0 ? (
           <MessageBox>
             Cart is empty. <Link to="/">Go Shopping</Link>
@@ -89,7 +90,7 @@ export default function CartScreen(props) {
                 {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
               </h2>
             </li>
-            <li>
+            <li className="offset">
               <button
                 type="button"
                 onClick={checkoutHandler}

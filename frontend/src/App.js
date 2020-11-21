@@ -11,14 +11,15 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="grid-container">
+      <dl className="grid-container">
         <header className="row">
           <div>
             <Link className="brand" to="/">
-              amazona
+              Serendipity
             </Link>
           </div>
           <div>
+          <Link to="/">Contact Me</Link>
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
@@ -33,8 +34,9 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
+
         <footer className="row center">All right reserved</footer>
-      </div>
+      </dl>
     </BrowserRouter>
   );
 }

@@ -96,7 +96,7 @@ export default function ProductScreen(props) {
                           </div>
                         </div>
                       </li>
-                      <li>
+                      <li className="offset">
                         <button
                           onClick={addToCartHandler}
                           className="primary block"
