@@ -33,6 +33,7 @@ function App() {
           </div>
           <div>
           <Link to="/">Contact</Link>
+          <Link to="/">About</Link>
             <Link to="/cart">
               Cart
               {cartItems.length > 0 && (
@@ -70,7 +71,14 @@ function App() {
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
 
-        <footer className="row center">All right reserved</footer>
+        <footer
+        className="row center">All right reserved 
+        <div className="">
+        <p> Powered by <h3>Web Synergy</h3></p>
+        </div>
+        
+         
+        </footer>
       </dl>
     </BrowserRouter>
   );

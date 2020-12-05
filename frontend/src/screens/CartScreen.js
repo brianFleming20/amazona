@@ -33,7 +33,7 @@ export default function CartScreen(props) {
         <Link to="/">Continue shopping</Link>
         {cartItems.length === 0 ? (
           <MessageBox>
-            Cart is empty. <Link to="/">Go Shopping</Link>
+            Cart is empty. <Link to="/">Continue Shopping</Link>
           </MessageBox>
         ) : (
           <ul>
@@ -66,7 +66,7 @@ export default function CartScreen(props) {
                       ))}
                     </select>
                   </div>
-                  <div>${item.price}</div>
+                  <div>£{item.price}</div>
                   <div>
                     <button
                       type="button"

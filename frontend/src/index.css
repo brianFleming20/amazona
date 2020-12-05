@@ -36,7 +36,7 @@ main {
 footer {
   background-color: #203040;
   color: #ffffff;
-
+  
   height:100px;
 }
 /* Common */
@@ -47,6 +47,18 @@ h1 {
 h2 {
   font-size: 1.6rem;
   padding: 1rem 0;
+}
+
+h3{
+  font-size: 1.5rem;
+  color: #3ac2eb;
+}
+p{
+  text-align: right;
+}
+
+.textRight{
+  text-align: right;
 }
 
 a {
@@ -68,7 +80,7 @@ select,
 textarea,
 button {
   padding: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1.8rem;
   border: 0.1rem #a4a4a4 solid;
   font-size: 1.6rem;
   font-family: Helvetica, Arial, sans-serif;
@@ -89,11 +101,12 @@ button.primary {
   background-color: #f0c040;
 }
 button.block {
-  width: 100%;
+  width: 65%;
+  text-align: center;
 }
 /* Header */
 header a {
-  color: #070d59;
+  color: #030630;
   padding: 2rem;
 }
 a.brand {
@@ -135,36 +148,40 @@ a.brand {
 
 /* Image */
 img {
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 img.small {
   max-width: 5rem;
   width: 100%;
 }
 img.medium {
-  max-width: 29rem;
+  height: 25rem;
+  max-width: 28rem;
   width: 100%;
 }
 img.large {
-  width: 100%;
+  width: 80%;
+height: 50rem;
 }
 
 /* Card */
 .card {
+  
   border: 0.1rem #c0c0c0 solid;
-  background-color: #f8f8f8;
-  border-radius: 0.5rem;
+  background-color: #98e7edbb;
+  border-radius: 1.8rem;
   margin: 1rem;
   padding: 1rem 0 0 0;
 }
 .card-body {
-  padding: 1rem;
+  padding: 0.3rem;
 }
 .card-body > * {
   margin-bottom: 0.5rem;
 }
 .price {
   font-size: 2rem;
+  color: #bb0b81;
 }
 /* Rating */
 .rating span {
