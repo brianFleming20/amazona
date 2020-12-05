@@ -1,1 +1,1 @@
-web: node --experimental-modules backend/server.js
+web: node --watch backend --exec node --experimental-modules backend/server.j
