@@ -9,7 +9,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fcdada;
 }
 #root {
   height: 100%;
@@ -28,17 +27,17 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #150485;
-  
+  background-color: #3ac2eb;
 }
 main {
   grid-area: main;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 footer {
-  grid-area: footer;
-  background-color:#ff9a8c;
+  background-color: #203040;
   color: #ffffff;
+
+  height:100px;
 }
 /* Common */
 h1 {
@@ -90,28 +89,22 @@ button.primary {
   background-color: #f0c040;
 }
 button.block {
-  width: 50%;
+  width: 100%;
 }
-
-.offset{
-  text-align: right;
-}
-
 /* Header */
 header a {
-  color: #ffffff;
-  padding: 1rem;
+  color: #070d59;
+  padding: 2rem;
 }
 a.brand {
-  color: #03c4a1;
+  font-family: 'Carter One', cursive;
+  color: #c95ca5;
   font-size: 5rem;
   font-weight: bold;
-  font-family: 'Carter One', cursive;
-  
 }
 .badge {
   background-color: #f02020;
-  color: #ffffff;
+  color: #070d59;
   border-radius: 50%;
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
@@ -125,6 +118,7 @@ a.brand {
 }
 .row.center {
   justify-content: center;
+  padding-top: 1rem;
 }
 .row.top {
   align-items: flex-start;
@@ -139,12 +133,10 @@ a.brand {
   min-width: 30rem;
 }
 
-
 /* Image */
 img {
   border-radius: 0.5rem;
 }
-
 img.small {
   max-width: 5rem;
   width: 100%;
@@ -154,7 +146,7 @@ img.medium {
   width: 100%;
 }
 img.large {
-  width: 60%;
+  width: 100%;
 }
 
 /* Card */
@@ -163,7 +155,7 @@ img.large {
   background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
-  padding-top: 1rem;
+  padding: 1rem 0 0 0;
 }
 .card-body {
   padding: 1rem;
@@ -203,3 +195,54 @@ img.large {
   background-color: #ffe0e0;
 }
 
+.powered{
+  text-align: right;
+  color: #fecd1a;
+  padding-left: 5rem;
+}
+
+/* Form */
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.form label {
+  margin: 1rem 0;
+}
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #9eacba;
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Checkout Steps */
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top-color: #dd4bd1;
+  color: #dc27cd;
+}
