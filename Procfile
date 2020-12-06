@@ -1,1 +1,2 @@
-web: node --experimental-modules backend/server.js
+web: cd frontend && npm install && npm start
+server: cd backend && npm install && npm start
